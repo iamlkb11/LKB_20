@@ -1,0 +1,15 @@
+<!--The whole content below can be removed with the new code.-->
+<div class="container">
+<p>Your Name</p><br/>
+ <label for="fname">First Name: </label>
+ <input type="text" name="" id="fname" class="form-control" [(ngModel)]="firstName"/>
+ <label for="lname">Last Name: </label>
+ <input type="text" name="" id="lname" class="form-control" [(ngModel)]="lastName"/>
+ <label for="fullName">Full Name:</label>
+ <input type="text" name="" id="fullName" class="form-control" [(ngModel)]="fullName"/>
+ <input type="button" name="" value="Click me" class="btn btn-primary btn-block" (click)="getFullName(firstName,lastName)"/>
+ <app-child [fullName]="fullName"></app-child>
+
+</div>
+
+
